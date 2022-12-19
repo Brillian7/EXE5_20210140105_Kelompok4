@@ -21,10 +21,15 @@ namespace EXE5_20210140105_Kelompok4
 
         public void insert(int element)
         {
-            Console.WriteLine("\nQueue overflow\n");
-            return;
-        }
 
+            /*This statement checks for the overflow condition. */
+            if ((Brillian == 0 && Amindia == max - 1) || (Brillian == Amindia + 1))
+            {
+                Console.WriteLine("\nQueue overflow\n");
+                return;
+            }
+
+        }
         static void Main(string[] args)
         {
         }
