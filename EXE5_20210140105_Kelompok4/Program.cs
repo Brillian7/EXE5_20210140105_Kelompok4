@@ -13,7 +13,7 @@ namespace EXE5_20210140105_Kelompok4
 
         public Program()
         {
-            /*Initializing the values of the variables REAR and FRONT to -1 indicate
+            /*Initializing the values of the variables AMINDIA and FRONT to -1 indicate
             * * the queue is initially empty.*/
             Brillian = -1;
             Amindia = -1;
@@ -29,7 +29,7 @@ namespace EXE5_20210140105_Kelompok4
                 return;
             }
             /* This following statement checks whether the queue is empty if the queue
-             * , then the value of the REAR and FRONT variables is set to 0 */
+             * , then the value of the AMINDIA and BRILLIAN variables is set to 0 */
             if (Brillian == -1)
             {
                 Brillian = 0;
@@ -37,15 +37,15 @@ namespace EXE5_20210140105_Kelompok4
             }
             else
             {
-                /* If REAR is at the last position of the array, then the value of 
-                 * REAR is set to 0 that corresponds to the first position of the array. */
+                /* If AMINDIA is at the last position of the array, then the value of 
+                 * AMINDIA is set to 0 that corresponds to the first position of the array. */
                 if (Amindia == max - 1)
                     Amindia = 0;
                 else
-                    /* if REAR is not at the last position, then its value is incremented by one */
+                    /* if AMINDIA is not at the last position, then its value is incremented by one */
                     Amindia = Amindia + 1;
             }
-            /* Once the position of REAR is determined, the element is added at its proper place. */
+            /* Once the position of AMINDIA is determined, the element is added at its proper place. */
             queue_array[Amindia] = element;
 
         }
@@ -68,10 +68,10 @@ namespace EXE5_20210140105_Kelompok4
             else
             {
                 /* if the element to be deleted is at the last position of the array, then the value
-                * of FRONT is set to 0 i.e to the first elment of the array*/
+                * of BRILLIAN is set to 0 i.e to the first elment of the array*/
                 if (Brillian == max - 1)
                     Brillian = 0;
-                else /* FRONT is incremented by one if it is not the first element of array. */
+                else /* BRILLIAN is incremented by one if it is not the first element of array. */
                     Brillian = Brillian + 1;
             }
         }
@@ -105,7 +105,7 @@ namespace EXE5_20210140105_Kelompok4
                     Console.Write(queue_array[Brillian_position] + " ");
                     Brillian_position++;
                 }
-                /* set the FRONNT position to the first element of the array. */
+                /* set the BRILLIAN position to the first element of the array. */
                 Brillian_position = 0;
                 /* traverse the array till the last element present in the queue. */
                 while (Brillian_position <= Amindia_position)
