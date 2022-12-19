@@ -28,6 +28,13 @@ namespace EXE5_20210140105_Kelompok4
                 Console.WriteLine("\nQueue overflow\n");
                 return;
             }
+            /* This following statement checks whether the queue is empty if the queue
+             * , then the value of the REAR and FRONT variables is set to 0 */
+            if (Brillian == -1)
+            {
+                Brillian = 0;
+                Amindia = 0;
+            }
 
         }
         static void Main(string[] args)
