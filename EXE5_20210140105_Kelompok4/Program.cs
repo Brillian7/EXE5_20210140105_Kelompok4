@@ -75,6 +75,17 @@ namespace EXE5_20210140105_Kelompok4
                     Brillian = Brillian + 1;
             }
         }
+
+        public void display()
+        {
+            int Brillian_position= Brillian;
+            int Amindia_position= Amindia;
+            /* Checks if the queue is empty. */
+            if (Brillian == -1)
+            {
+
+            }
+        }
         static void Main(string[] args)
         {
         }
