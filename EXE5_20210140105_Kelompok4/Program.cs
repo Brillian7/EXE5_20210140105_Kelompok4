@@ -35,6 +35,16 @@ namespace EXE5_20210140105_Kelompok4
                 Brillian = 0;
                 Amindia = 0;
             }
+            else
+            {
+                /* If REAR is at the last position of the array, then the value of 
+                 * REAR is set to 0 that corresponds to the first position of the array. */
+                if (Amindia == max - 1)
+                    Amindia = 0;
+                else
+                    /* if REAR is not at the last position, then its value is incremented by one */
+                    Amindia = Amindia + 1;
+            }
 
         }
         static void Main(string[] args)
