@@ -83,7 +83,19 @@ namespace EXE5_20210140105_Kelompok4
             /* Checks if the queue is empty. */
             if (Brillian == -1)
             {
-
+                Console.WriteLine("Queue is empty\n");
+                return;
+            }
+            Console.WriteLine("\nElements in the queue are.............................................\n");
+            if (Brillian_position <= Amindia_position)
+            {
+                /*traverses the queue till the last element present in an array. */
+                while (Brillian_position <= Amindia_position)
+                {
+                    Console.Write(queue_array[Brillian_position] + " ");
+                    Brillian_position++;
+                }
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
