@@ -102,8 +102,18 @@ namespace EXE5_20210140105_Kelompok4
                 /*traverses the queue till the last position of the array. */
                 while (Brillian_position <= max - 1)
                 {
-
+                    Console.Write(queue_array[Brillian_position] + " ");
+                    Brillian_position++;
                 }
+                /* set the FRONNT position to the first element of the array. */
+                Brillian_position = 0;
+                /* traverse the array till the last element present in the queue. */
+                while (Brillian_position <= Amindia_position)
+                {
+                    Console.Write(queue_array[Brillian_position] + " ");
+                    Brillian_position++;
+                }
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
