@@ -45,7 +45,35 @@ namespace EXE5_20210140105_Kelompok4
                     /* if REAR is not at the last position, then its value is incremented by one */
                     Amindia = Amindia + 1;
             }
+            /* Once the position of REAR is determined, the element is added at its proper place. */
+            queue_array[Amindia] = element;
 
+        }
+        public void Delete()
+        {
+            /* checks wheather the queue is empty. */
+            if (Brillian == -1)
+            {
+                Console.WriteLine("Queue underflow\n");
+                return;
+            }
+            Console.WriteLine("\nThe element deleted from the queue is: " + queue_array[Brillian]
+               + "\n");
+            /* Check if the queue has one element. */
+            if (Brillian == Amindia)
+            {
+                Brillian = -1;
+                Amindia = -1;
+            }
+            else
+            {
+                /* if the element to be deleted is at the last position of the array, then the value
+                * of FRONT is set to 0 i.e to the first elment of the array*/
+                if (Brillian == max - 1)
+                    Brillian = 0;
+                else /* FRONT is incremented by one if it is not the first element of array. */
+                    Brillian = Brillian + 1;
+            }
         }
         static void Main(string[] args)
         {
