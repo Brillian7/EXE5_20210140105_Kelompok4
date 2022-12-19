@@ -97,6 +97,14 @@ namespace EXE5_20210140105_Kelompok4
                 }
                 Console.WriteLine();
             }
+            else
+            {
+                /*traverses the queue till the last position of the array. */
+                while (Brillian_position <= max - 1)
+                {
+
+                }
+            }
         }
         static void Main(string[] args)
         {
