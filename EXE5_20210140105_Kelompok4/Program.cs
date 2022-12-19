@@ -118,6 +118,54 @@ namespace EXE5_20210140105_Kelompok4
         }
         static void Main(string[] args)
         {
+            Program queue = new Program();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("A. Implement insert operation");
+                    Console.WriteLine("B. Implement delete Operation");
+                    Console.WriteLine("C. Display Values");
+                    Console.WriteLine("D. Exit");
+                    Console.Write("\nEnter your choice (A-D): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.WriteLine("Enter a abjad: ");
+                                int abjad = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(abjad);
+                            }
+                            break;
+                        case '2':
+                            {
+                                queue.Delete();
+                            }
+                            break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid Option !! ");
+                            }
+                            break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("check for the values entered.");
+                }
+            }
         }
     }
 }
