@@ -19,6 +19,12 @@ namespace EXE5_20210140105_Kelompok4
             Amindia = -1;
         }
 
+        public void insert(int element)
+        {
+            Console.WriteLine("\nQueue overflow\n");
+            return;
+        }
+
         static void Main(string[] args)
         {
         }
